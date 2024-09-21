@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+.card{
+    width:90%;
+    max-width: 470px;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    color:#fff;
+    margin: 30px auto 0;
+    padding:40px 35px;
+    text-align: center;
+    border-radius: 10px;
+}
+.search{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+}
+.search input{
+    border:0;
+    outline:0;
+    padding: 10px 25px;
+    height:60px;
+    border-radius: 30px;
+    flex:1;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.image{
+    height:30px;
+    width:30px;
+    border-radius: 50px;
+}
+.search button{
+    border:0;
+    outline: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.search button img{
+    width:auto;
+}
+.details{
+    display: flex;
+}
+.humidity_img{
+    padding-top: 20px;
+    height: 80px;
+    width:auto;
+    align-items: center;
+    padding-left:50px;
+}
+.wind_speed_image{
+    height:100px;
+    width:auto;
+    padding-left:150px;
+}
+.wind_speed{
+    padding-left: 150px;
+}
+.weather-icon {
+    width: 100px;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* For small screens (max-width: 576px) */
+@media(max-width: 576px){
+    .card{
+        width:60%;
+    }
+    .search{
+        width:100%;
+    }
+    .search input{
+        width:100%;
+    }
+    .details{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .humidity_img, .wind_speed_image{
+        height: 60px;
+        padding-left: 0;
+    }
+    .wind_speed, .humidity {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+/* For medium screens (max-width: 768px) */
+@media(max-width: 768px){
+    .card{
+        width:70%;
+    }
+    .search input{
+        padding: 10px 20px;
+    }
+    .humidity_img, .wind_speed_image{
+        height: 70px;
+    }
+}
+
+/* For large screens (max-width: 992px) */
+@media(max-width: 992px){
+    .card{
+        width:75%;
+    }
+    .search input{
+        padding: 10px 20px;
+    }
+    .humidity_img, .wind_speed_image{
+        height: 80px;
+    }
+}
+
+/* For extra large screens (max-width: 1200px) */
+@media(max-width: 1200px){
+    .card{
+        width:80%;
+    }
+    .search input{
+        padding: 10px 25px;
+    }
+    .humidity_img, .wind_speed_image{
+        height: 90px;
+    }
+}
